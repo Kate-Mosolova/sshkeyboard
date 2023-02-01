@@ -1,5 +1,8 @@
 # sshkeyboard
 
+**Important: this fork only works in the mode press'n'hold.**
+This means that your function runs while the corresponding key is pressed.
+
 The only keyboard event callback library that works _everywhere_, even when
 used through an [SSH](https://en.wikipedia.org/wiki/Secure_Shell) connection
 (hence the name).
