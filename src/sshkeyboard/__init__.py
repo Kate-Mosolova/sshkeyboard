@@ -589,6 +589,10 @@ async def _react_to_input(state, options):
         # Update press time
         if state.current == state.previous:
             state.press_time = time()
+            
+        #press and hold for run function
+        if state.initial_press_time != state.press_time:
+            await options.on_press_callback(state.current)
 
     # Handle empty
     # - Release the state.previous character if nothing is read
